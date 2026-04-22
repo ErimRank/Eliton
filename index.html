@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><script>localStorage.setItem("Env","Dev");localStorage.setItem("Config","Dev");</script>
+    <meta charset="UTF-8"><script>localStorage.setItem("ENV","DEV");localStorage.setItem("CONFIG","CONFIG");</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Builder</title>
 </head>
@@ -26,10 +26,10 @@
             document.head.appendChild(style);
         };
     };
-    if (localStorage.getItem("Updates")) {
+    if (localStorage.getItem("UPDATES")) {
         ROUTEJS("ELITION");ELITE();
     } else { 
-        if (localStorage.getItem("Env") === "Dev" ) {
+        if (localStorage.getItem("ENV") === "DEV" ) {
             const { CONNECTION } = await import("./index.js");
             CONNECTION();
         } else {
@@ -38,7 +38,6 @@
                 CONNECTION();
             } else {
                 const BODY=document.querySelector("body");
-                
             };
         };
     };
