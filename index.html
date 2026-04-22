@@ -7,14 +7,39 @@
 </head>
 <body></body>
 <script type="module">
+    const ROUTEJS=(NAME)=>{
+        const code = localStorage.getItem(NAME);
+        if (code) {
+            const script = document.createElement("script");
+            script.type = "text/javascript";
+            script.textContent = code;
+            script.defer=true;
+            document.head.appendChild(script);
+        };
+    };
+    const ROUTECSS=(NAME)=>{
+        const css = localStorage.getItem(NAME);
+        if (css) {
+            const style = document.createElement("style");
+            style.type = "text/css";
+            style.textContent = css;
+            document.head.appendChild(style);
+        };
+    };
     if (localStorage.getItem("Updates")) {
-        ELITE();
+        ROUTEJS("ELITION");ELITE();
     } else { 
         if (localStorage.getItem("Env") === "Dev" ) {
             const { CONNECTION } = await import("./index.js");
             CONNECTION();
         } else {
-            
+            if (navigator.onLine) {
+                const { CONNECTION } = await import("https://erimrank.github.io/Eliton/index.js");
+                CONNECTION();
+            } else {
+                const BODY=document.querySelector("body");
+                
+            };
         };
     };
 </script>
