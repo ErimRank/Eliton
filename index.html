@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><script>localStorage.setItem("Env","Dev");localStorage.setItem("Config","Dev");</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Builder</title>
 </head>
 <body></body>
+<script type="module">
+    if (localStorage.getItem("Updates")) {
+        ELITE();
+    } else { 
+        if (localStorage.getItem("Env") === "Dev" ) {
+            const { CONNECTION } = await import("./index.js");
+            CONNECTION();
+        } else {
+            
+        };
+    };
+</script>
 </html>
