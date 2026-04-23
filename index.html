@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><script>localStorage.setItem("ENV","DEV");localStorage.setItem("CONFIG","CONFIG");</script>
+    <meta charset="UTF-8"><script>localStorage.setItem("ENV","WEB");localStorage.setItem("CONFIG","CONFIG");</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Builder</title>
 </head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family: sans-serif,Cambria;
+        font-size: 20px;
+        text-decoration: none;
+        list-style: none;
+        border: none;
+        outline: none;
+    }
+    body{
+        position: fixed;
+        width:100%;
+        height:100%;
+        overflow: hidden;
+    }
+    .Offline{
+        margin-top: 5vh;
+        font-size: 25px;
+        color: red;
+    }
+    .OfflineHolder{
+        position: relative;
+        width: 90%;
+        height: 50px;
+        display: inline-flex;
+    }
+    .Buttons{
+        position: relative;
+        margin: auto;
+        width: 45%;
+        height: 40px;
+        background: forestgreen;
+        color: white;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    .Mode{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 3vh;
+        background: black;
+        border-radius: 50px;
+        margin-top: 2%;
+    }
+</style>
 <body></body>
 <script type="module">
+    const BODY=document.querySelector("body");
+    if (localStorage.getItem("AppMode")) {
+       BODY.style.background="black";
+       BODY.style.color="white";
+    } else {
+        BODY.style.background="White";
+        BODY.style.color="black";
+    };
     const ROUTEJS=(NAME)=>{
         const code = localStorage.getItem(NAME);
         if (code) {
@@ -37,7 +94,37 @@
                 const { CONNECTION } = await import("https://erimrank.github.io/Eliton/index.js");
                 CONNECTION();
             } else {
-                const BODY=document.querySelector("body");
+                BODY.innerHTML=`
+                    <div class="Mode"></div>
+                    <br><br><br><br>
+                    <h1 class="Offline">OFFLINE</h1>
+                    <br><br>
+                    <p>Check Your Internet Connection.<p>
+                    <br><br>
+                    <div class="OfflineHolder">
+                        <button id="retry" class="Buttons">Retry</button>
+                        <button id="Contact" class="Buttons">Contact Admin</button>
+                    </div>
+                `;
+                const retry=document.querySelector("#retry");
+                retry.addEventListener("click",()=>{location.reload();});
+                const Contact=document.querySelector("#Contact");
+                Contact.addEventListener("click",()=>{location.href="mailto:eliterobustontology@gmail.com";});
+                const Mode=document.querySelector(".Mode");
+                    if (localStorage.getItem("AppMode")) {
+                        Mode.style.background="white";
+                    } else {
+                        Mode.style.background="black";
+                    };
+                Mode.addEventListener("click",()=>{
+                    if (localStorage.getItem("AppMode")) {
+                        localStorage.removeItem("AppMode");
+                        location.reload();
+                    } else {
+                        localStorage.setItem("AppMode","True");
+                        location.reload();
+                    };
+                });
             };
         };
     };
