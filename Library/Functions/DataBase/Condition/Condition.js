@@ -1,3 +1,7 @@
-export const CONDITION=()=>{
-
+export const CONDITION=(TERM,CALL,CALLBACK)=>{
+    if (TERM) {
+        CALL();
+    } else {
+        CALLBACK();
+    };
 };
