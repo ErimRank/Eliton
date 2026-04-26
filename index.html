@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"><script>localStorage.setItem("ENV","DEV");localStorage.setItem("CONFIG","CONFIG");</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Builder</title>
+    <title>Elite Robust Ontology</title>
 </head>
 <style>
     *{
@@ -118,11 +118,9 @@
                     };
                 Mode.addEventListener("click",()=>{
                     if (localStorage.getItem("AppMode")) {
-                        localStorage.removeItem("AppMode");
-                        location.reload();
+                        localStorage.removeItem("AppMode");location.reload();
                     } else {
-                        localStorage.setItem("AppMode","True");
-                        location.reload();
+                        localStorage.setItem("AppMode","True");location.reload();
                     };
                 });
             };
