@@ -1,0 +1,1 @@
+export const PAYMENTSYSTEMLINK="https://script.google.com/macros/s/AKfycbzsmS-yDSfhPvyUQ8T0rKaWOYUdthQOVyBE20Lokl31qUkhpY_tXqlAfE-ZAZ08IK3UFQ/exec";
