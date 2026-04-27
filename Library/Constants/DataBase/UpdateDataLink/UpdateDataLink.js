@@ -1,0 +1,1 @@
+export const UPDATEDATALINK="https://script.google.com/macros/s/AKfycbwq4pqJn_pg4iiUnxcat9wxW-s7O59wDYoTd8N3Wjyjtm8dm3oZZ1kNhsC6l4TLekFBbw/exec";
