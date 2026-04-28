@@ -1,12 +1,12 @@
-export const ADD=(HOLDER,ELEMENT)=>{
+export const ADD=(HOLDER,DATA)=>{
 
-    CONDITION(ELEMENT,()=>{
+    CONDITION(HOLDER,()=>{
 
-        HOLDER.append(ELEMENT);
+        HOLDER.append(DATA);
 
     },()=>{
 
-        BODY.append(ELEMENT);
+        BODY.append(DATA);
 
     });
 

@@ -1,0 +1,21 @@
+export const IFRAME=(HOLDER,SRC,callBack)=>{
+
+    ELEMENTED(HOLDER,"iframe",(ELEMENT)=>{
+
+        SOURCED(ELEMENT,SRC);
+
+        POSITIONRELATIVE(ELEMENT);
+        WIDTH(ELEMENT,"");
+        HEIGHT(ELEMENT,"");
+        MARGIN(ELEMENT,"");
+        DISPLAYBLOCK(ELEMENT);
+        BORDER(ELEMENT,TRANSPARENT);
+        OUTLINE(ELEMENT);
+        OVERFLOWHIDDEN(ELEMENT);
+        BACKGROUND(ELEMENT,TRANSPARENT);
+
+        callBack(ELEMENT);
+
+    });
+
+};

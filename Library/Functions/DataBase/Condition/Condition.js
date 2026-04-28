@@ -1,7 +1,13 @@
-export const CONDITION=(TERM,CALL,CALLBACK)=>{
-    if (TERM) {
-        CALL();
+export const CONDITION=(TERMS,callback,callbackOne)=>{
+
+    if (TERMS) {
+
+        callback();
+
     } else {
-        CALLBACK();
+
+        callbackOne();
+        
     };
+    
 };

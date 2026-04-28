@@ -1,0 +1,20 @@
+export const IMAGE=(HOLDER,WIDE,TALL,SOURCE,APPEARANCE,callBack)=>{
+
+    ELEMENTED(HOLDER,"img",(ELEMENT)=>{
+
+        ELEMENT.src=SOURCE;
+
+        POSITIONRELATIVE(ELEMENT);
+        MARGIN(ELEMENT,"");
+        WIDTH(ELEMENT,WIDE||"");
+        HEIGHT(ELEMENT,TALL||"");
+        BACKGROUND(ELEMENT,APPEARANCE||TRANSPARENT);
+        RADIUS(ELEMENT,"0");
+
+        COVEROBJECTFIT(ELEMENT);
+
+        callBack(ELEMENT);
+
+    });
+
+};

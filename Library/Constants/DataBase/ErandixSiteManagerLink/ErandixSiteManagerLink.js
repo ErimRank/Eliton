@@ -1,0 +1,1 @@
+export const ERANDIXSITEMANAGERLINK="https://docs.google.com/spreadsheets/d/18BDAlhLQIqGOZ0CA2DWs-_2fRVcEtbvit56uBZjPAfQ/edit?usp=sharing";

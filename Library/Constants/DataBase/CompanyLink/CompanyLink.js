@@ -1,0 +1,1 @@
+export const COMPANYLINK="https://elite-robust-ontology.github.io";

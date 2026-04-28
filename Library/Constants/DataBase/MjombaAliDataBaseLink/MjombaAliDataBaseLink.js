@@ -1,0 +1,1 @@
+export const MJOMBAALIDATABASELINK="https://docs.google.com/spreadsheets/d/1dIg-pAEqD8Yie54NMaJA516W9j5RbHs6N-tqaQO0Ork/edit?usp=sharing";

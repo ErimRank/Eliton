@@ -1,0 +1,1 @@
+export const COMPANYNAME="Elite Robust Ontology";

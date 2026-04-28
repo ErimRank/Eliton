@@ -1,0 +1,1 @@
+export const PURPLE="#800080";

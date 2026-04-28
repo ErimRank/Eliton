@@ -1,0 +1,1 @@
+export const MUSICSERVERLINK="https://musix-f65ecb.gitlab.io";

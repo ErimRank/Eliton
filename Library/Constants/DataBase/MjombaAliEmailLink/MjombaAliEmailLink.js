@@ -1,0 +1,1 @@
+export const MJOMBAALIEMAILLINK="https://script.google.com/macros/s/AKfycbzzWzkV8P1slMtvJ96lHL4QzmhqKLsVKfALP-SwYVVFZe8ftrSHYReb6uhOpSiqp1CG/exec";

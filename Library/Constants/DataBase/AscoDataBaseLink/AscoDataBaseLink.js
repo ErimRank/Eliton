@@ -1,0 +1,1 @@
+export const ASCODATABASELINK="https://docs.google.com/spreadsheets/d/1SIYb1O1op5xmqgfScbmM7FDs9JqLmU8edYN-knBrJMg/edit?usp=sharing";

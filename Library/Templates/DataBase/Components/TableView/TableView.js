@@ -1,0 +1,12 @@
+export const TABLEVIEW=(HOLDER,WIDE,TALL,COLORS,AMOUNT,callBack)=>{
+
+    DIV(HOLDER,WIDE||"",TALL||"",COLORS||TRANSPARENT,(ELEMENT)=>{
+
+        DISPLAYTABLE(ELEMENT);
+        MARGIN(ELEMENT,AMOUNT);
+
+        callBack(ELEMENT);
+
+    });
+
+};

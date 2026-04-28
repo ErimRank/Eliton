@@ -1,0 +1,5 @@
+export const COMPONENTVALUE=(ELEMENT,AMOUNT)=>{
+
+    ELEMENT.value=AMOUNT;
+
+};

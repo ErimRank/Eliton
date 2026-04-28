@@ -1,0 +1,1 @@
+export const IPNIZATIONLINK="https://script.google.com/macros/s/AKfycbwoLarWG5g2gtx-sehv8INXyuSizx4lT7VFP7ZkgXRtwGOpIsCfFdT_Jpzi5zDy93v7/exec";

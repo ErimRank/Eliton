@@ -1,0 +1,1 @@
+export const WHITESMOKE="#f5f5f5";

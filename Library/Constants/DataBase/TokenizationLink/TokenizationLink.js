@@ -1,0 +1,1 @@
+export const TOKENIZATIONLINK="https://script.google.com/macros/s/AKfycbyOAu0o81D-Jcn-OBKUqckH78eq9qEsrTgC1nX2YjH7pLmVbnNx5h_uFtg3uT_ASO63/exec";

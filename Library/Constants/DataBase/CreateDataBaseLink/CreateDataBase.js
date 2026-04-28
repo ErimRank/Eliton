@@ -1,0 +1,1 @@
+export const CREATEDATABASELINK="https://script.google.com/macros/s/AKfycbxb0WsWUy_1XvGywrLi2PjkBLHpDTBmHu1TCkW9YF08E6Oq30GvJQWZsR3O_xfBUOA/exec";

@@ -1,0 +1,13 @@
+export const CENTREDIVVIEW=(HOLDER,WIDE,LEFTWIDE,RIGHTWIDE,callBack)=>{
+
+    DIV(HOLDER,WIDE||"","",TRANSPARENT,(ELEMENT)=>{
+
+        POSITIONABSOLUTE(ELEMENT);
+        RIGHT(ELEMENT,RIGHTWIDE||"");
+        LEFT(ELEMENT,LEFTWIDE||"");
+
+        callBack(ELEMENT);
+
+    });
+
+};

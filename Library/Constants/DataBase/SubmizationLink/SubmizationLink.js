@@ -1,0 +1,1 @@
+export const SUBMIZATIONLINK="https://script.google.com/macros/s/AKfycbwqX3IqPY0C2wH_DHE4Y9wO010tiKvsjetijTtMA-cBIXfvJ8Y35xgmpu1a2EpmWojv/exec";

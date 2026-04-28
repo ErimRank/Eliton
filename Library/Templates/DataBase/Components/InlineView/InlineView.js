@@ -1,0 +1,12 @@
+export const INLINEVIEW=(HOLDER,WIDE,TALL,COLORS,AMOUNT,callBack)=>{
+
+    DIV(HOLDER,WIDE||"",TALL||"",COLORS||TRANSPARENT,(ELEMENT)=>{
+
+        DISPLAYFLEX(ELEMENT);
+        MARGIN(ELEMENT,AMOUNT);
+
+        callBack(ELEMENT);
+
+    });
+
+};
